@@ -6,6 +6,7 @@ import '@/_common/bootstrap.js';
 import Vue from 'vue';
 import VueRouter from 'VueRouter';
 import elementUI from '@/_common/components/ElementUi/index.js';
+import axios from 'axios';
 
 import routes from './routes';
 
@@ -17,6 +18,8 @@ Vue.use(VueRouter);
 
 // Ui
 Vue.use(elementUI);
+
+Vue.prototype.$http = axios;
 
 new Vue({
     router: new VueRouter({

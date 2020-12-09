@@ -22,6 +22,9 @@ import componentPackDateTimeRange from '../viewComponents/DateTimeRange';
 import componentPackObject from '../viewComponents/Object';
 import componentPackArray from '../viewComponents/Array';
 
+import componentPackRequestSelect from '../viewComponents/RequestSelect';
+
+
 /**
  * hidden 隐藏，不显示在工具栏
  * maxNum Number 最大可配置数
@@ -55,6 +58,15 @@ const tools = [
             title: '颜色选择',
             componentPack: componentPackColor
         }]
+    },
+    {
+        groupName: '高级组件',
+        componentList: [
+            {
+                title: '下拉选择（动态）',
+                componentPack: componentPackRequestSelect
+            }
+        ]
     },
     {
         groupName: '文件上传',
